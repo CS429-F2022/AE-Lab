@@ -46,171 +46,23 @@ clean:
 	${RM} *.o *.so *.bak
 
 # DO NOT DELETE
-ADD_RI.o: ADD_RI.c /usr/include/stdc-predef.h /usr/include/assert.h \
- /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/bits/long-double.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ADD_RI.o: ADD_RI.c \
  ../../include/instr/ADD_RI.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  ../../include/instr/../instr.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stdbool.h \
  ../../include/instr/../reg.h ../../include/instr/../mem.h \
  ../../include/machine.h ../../include/proc.h ../../include/reg.h \
  ../../include/mem.h
-ADD_RR.o: ADD_RR.c /usr/include/stdc-predef.h
-ADDS_RI.o: ADDS_RI.c /usr/include/stdc-predef.h
-ADDS_RR.o: ADDS_RR.c /usr/include/stdc-predef.h
-AND_RI.o: AND_RI.c /usr/include/stdc-predef.h
-AND_RR.o: AND_RR.c /usr/include/stdc-predef.h
-ANDS_RI.o: ANDS_RI.c /usr/include/stdc-predef.h
-ANDS_RR.o: ANDS_RR.c /usr/include/stdc-predef.h
-ASR.o: ASR.c /usr/include/stdc-predef.h
-B.o: B.c /usr/include/stdc-predef.h
-B_COND.o: B_COND.c /usr/include/stdc-predef.h
-BL.o: BL.c /usr/include/stdc-predef.h
-BLR.o: BLR.c /usr/include/stdc-predef.h
-BR.o: BR.c /usr/include/stdc-predef.h
-CBNZ.o: CBNZ.c /usr/include/stdc-predef.h
-CBZ.o: CBZ.c /usr/include/stdc-predef.h
-EOR_RI.o: EOR_RI.c /usr/include/stdc-predef.h
-EOR_RR.o: EOR_RR.c /usr/include/stdc-predef.h
-HLT.o: HLT.c /usr/include/stdc-predef.h
-LDURB.o: LDURB.c /usr/include/stdc-predef.h
-LDUR.o: LDUR.c /usr/include/stdc-predef.h
-LDURH.o: LDURH.c /usr/include/stdc-predef.h
-LSL.o: LSL.c /usr/include/stdc-predef.h
-LSR.o: LSR.c /usr/include/stdc-predef.h
-MOVK.o: MOVK.c /usr/include/stdc-predef.h
-MOVZ.o: MOVZ.c /usr/include/stdc-predef.h
-MVN.o: MVN.c /usr/include/stdc-predef.h
-NOP.o: NOP.c /usr/include/stdc-predef.h
-ORR_RI.o: ORR_RI.c /usr/include/stdc-predef.h
-ORR_RR.o: ORR_RR.c /usr/include/stdc-predef.h
-RET.o: RET.c /usr/include/stdc-predef.h
-STURB.o: STURB.c /usr/include/stdc-predef.h
-STUR.o: STUR.c /usr/include/stdc-predef.h
-STURH.o: STURH.c /usr/include/stdc-predef.h
-SUB_RI.o: SUB_RI.c /usr/include/stdc-predef.h
-SUB_RR.o: SUB_RR.c /usr/include/stdc-predef.h
-SUBS_RI.o: SUBS_RI.c /usr/include/stdc-predef.h
-SUBS_RR.o: SUBS_RR.c /usr/include/stdc-predef.h
-TBNZ.o: TBNZ.c /usr/include/stdc-predef.h
-TBZ.o: TBZ.c /usr/include/stdc-predef.h
-UBFM.o: UBFM.c /usr/include/stdc-predef.h
-common_memory.o: common_memory.c /usr/include/stdc-predef.h \
- /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/bits/long-double.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/include/x86_64-linux-gnu/sys/types.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
- /usr/include/x86_64-linux-gnu/sys/select.h \
- /usr/include/x86_64-linux-gnu/bits/select.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
- /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stdbool.h /usr/include/string.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h /usr/include/assert.h ../../include/err_handler.h \
+
+ADD_RR.o: ADD_RR.c ADDS_RI.c ADDS_RR.c AND_RI.c AND_RR.c ANDS_RI.c ANDS_RR.c ASR.c B.c B_COND.c BL.c BLR.c BR.c CBNZ.c CBZ.c EOR_RI.c EOR_RR.c HLT.c LDURB.c LDUR.c LDURH.c LSL.c LSR.c MOVK.c MOVZ.c MVN.c NOP.c ORR_RI.c ORR_RR.c RET.c STURB.c STUR.c STURH.c SUB_RI.c SUB_RR.c SUBS_RI.c SUBS_RR.c TBNZ.c TBZ.c UBFM.c common_memory.c \
+ ../../include/err_handler.h \
  ../../include/instr.h ../../include/reg.h ../../include/mem.h \
  ../../include/machine.h ../../include/proc.h
-common_writeback.o: common_writeback.c /usr/include/stdc-predef.h \
- /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/bits/long-double.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/include/x86_64-linux-gnu/sys/types.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
- /usr/include/x86_64-linux-gnu/sys/select.h \
- /usr/include/x86_64-linux-gnu/bits/select.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
- /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stdbool.h /usr/include/string.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h /usr/include/assert.h ../../include/err_handler.h \
+common_writeback.o: common_writeback.c \
+ ../../include/err_handler.h \
  ../../include/instr.h ../../include/reg.h ../../include/mem.h \
  ../../include/machine.h ../../include/proc.h
-common_update_pc.o: common_update_pc.c /usr/include/stdc-predef.h \
- /usr/include/assert.h /usr/include/features.h \
- /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/bits/long-double.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h ../../include/machine.h \
- ../../include/proc.h /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h \
- /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h ../../include/reg.h \
- ../../include/mem.h ../../include/instr.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stdbool.h
+common_update_pc.o: common_update_pc.c \
+ ../../include/machine.h \
+ ../../include/proc.h \
+ ../../include/reg.h \
+ ../../include/mem.h ../../include/instr.h 
