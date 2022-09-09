@@ -93,7 +93,7 @@ void init_itable(void) {
     init_itable_range(OP_UBFM, 0x698U, 0x69bU);
     init_itable_range(OP_ASR, 0x098U, 0x09bU);
     init_itable_range(OP_ASR, 0x498U, 0x49bU);
-    init_itable_range(OP_B, 0x0a0U, 0x0abfU);
+    init_itable_range(OP_B, 0x0a0U, 0x0bfU);
     init_itable_entry(OP_BR, 0x6b0U);
     init_itable_range(OP_B_COND, 0x2a0U, 0x2a7U);
     init_itable_range(OP_CBNZ, 0x1a8U, 0x1afU);
