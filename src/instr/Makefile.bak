@@ -11,16 +11,16 @@ LIBS = -ldl
 MD = gccmakedep
 
 SRCS := \
-ADD_RI.c ADDS_RR.c ANDS_RR.c ASR.c \
+ADDS_RR.c ANDS_RR.c ASR.c \
 B.c B_COND.c BL.c \
 EOR_RR.c \
 HLT.c \
-LDURB.c LDUR.c LSL.c LSR.c \
+LDUR.c LSL.c LSR.c \
 MOVK.c MOVZ.c MVN.c \
 NOP.c \
 ORR_RR.c \
 RET.c \
-STURB.c STUR.c SUBS_RR.c \
+STUR.c SUBS_RR.c \
 UBFM.c \
 common_memory.c common_writeback.c common_update_pc.c
 # SRCS := $(HDRS:%.h=%.c)
@@ -44,7 +44,6 @@ clean:
 	${RM} *.o *.so *.bak
 
 # DO NOT DELETE
-ADD_RI.o: ADD_RI.c /usr/include/stdc-predef.h
 ADDS_RR.o: ADDS_RR.c /usr/include/stdc-predef.h
 ANDS_RR.o: ANDS_RR.c /usr/include/stdc-predef.h
 ASR.o: ASR.c /usr/include/stdc-predef.h
@@ -70,7 +69,6 @@ HLT.o: HLT.c /usr/include/stdc-predef.h /usr/include/assert.h \
  ../../include/instr/../reg.h ../../include/instr/../mem.h \
  ../../include/machine.h ../../include/proc.h ../../include/reg.h \
  ../../include/mem.h
-LDURB.o: LDURB.c /usr/include/stdc-predef.h
 LDUR.o: LDUR.c /usr/include/stdc-predef.h
 LSL.o: LSL.c /usr/include/stdc-predef.h
 LSR.o: LSR.c /usr/include/stdc-predef.h
@@ -97,7 +95,6 @@ NOP.o: NOP.c /usr/include/stdc-predef.h /usr/include/assert.h \
  ../../include/mem.h
 ORR_RR.o: ORR_RR.c /usr/include/stdc-predef.h
 RET.o: RET.c /usr/include/stdc-predef.h
-STURB.o: STURB.c /usr/include/stdc-predef.h
 STUR.o: STUR.c /usr/include/stdc-predef.h
 SUBS_RR.o: SUBS_RR.c /usr/include/stdc-predef.h
 UBFM.o: UBFM.c /usr/include/stdc-predef.h

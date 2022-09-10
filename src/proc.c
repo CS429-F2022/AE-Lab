@@ -17,7 +17,7 @@ int runElf(const uint64_t entry) {
     logging(LOG_INFO, "Running ELF executable");
     guest.proc->PC.bits->xval = entry;
     guest.proc->SP.bits->xval = guest.mem->seg_start_addr[KERNEL_SEG]-8;
-    guest.proc->NZCV.bits->sval = 0;
+    guest.proc->NZCV.bits->ccval = PACK_CC(0, 1, 0, 0);
     guest.proc->GPR.bits[30].xval = RET_FROM_MAIN_ADDR;
 
 #ifdef DEBUG

@@ -77,12 +77,15 @@ static uint64_t _mem_read_special(const uint64_t addr, const unsigned width) {
         exit(EXIT_FAILURE);
     }
     if (IO_CHAR_ADDR == addr) {
-        uint64_t data;
+        uint8_t data8;
+        uint16_t data16;
+        uint32_t data32;
+        uint64_t data64;
         switch (width) {
-            case 1: scanf("%c\n", &data); return (char) (data&0xFFU); break;
-            case 2: scanf("%hd\n", &data); return (short) (data & 0xFFFFU); break;
-            case 4: scanf("%d\n", &data); return (int) (data & 0xFFFFFFFFU); break;
-            case 8: scanf("%ld\n", &data); return (long) data; break;
+            case 1: scanf("%c\n", &data8); return (char) (data8&0xFFU); break;
+            case 2: scanf("%hd\n", &data16); return (short) (data16 & 0xFFFFU); break;
+            case 4: scanf("%d\n", &data32); return (int) (data32 & 0xFFFFFFFFU); break;
+            case 8: scanf("%ld\n", &data64); return (long) data64; break;
             default: assert(false); break;
         }
     }

@@ -345,9 +345,6 @@ instr.o: instr.c /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/strings.h /usr/include/assert.h ../include/err_handler.h \
  ../include/instr.h ../include/reg.h ../include/mem.h \
  ../include/machine.h ../include/proc.h ../include/instructions.h \
- ../include/instr/ADD_RI.h \
- ../include/instr/LDURB.h \
- ../include/instr/STURB.h \
  ../include/instr/LDUR.h ../include/instr/../instr.h \
  ../include/instr/STUR.h ../include/instr/MOVK.h ../include/instr/MOVZ.h \
  ../include/instr/ADDS_RR.h ../include/instr/SUBS_RR.h \

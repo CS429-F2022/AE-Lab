@@ -11,6 +11,7 @@ typedef enum wvar {
 } wvar_t;
 
 typedef union gpregval {
+    uint8_t ccval; // This is to be used only for condition codes, i.e., for the NZCV register.
     int8_t  sval;
     int32_t wval;
     int64_t xval;

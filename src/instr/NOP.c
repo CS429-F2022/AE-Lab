@@ -5,7 +5,7 @@
 extern machine_t guest;
 
 void decode_NOP(instr_t * const insn) {
-    assert(insn->insnbits == 0xd503201f);
+    assert(insn->insnbits == 0xc503201f);
     return;
 }
 

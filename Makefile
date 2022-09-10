@@ -17,7 +17,7 @@ MD = gccmakedep
 
 # Targets
 
-all: depend ae clean
+all: tidy depend ae clean
 
 ae: 
 	(cd src && make $@)
@@ -29,6 +29,9 @@ depend:
 clean:
 	(cd src && make $@)
 	${RM} *.o *.so *.bak
+
+tidy:
+	${RM} ae
 
 count:
 	wc -l src/*.c src/instr/*.c | tail -n 1
