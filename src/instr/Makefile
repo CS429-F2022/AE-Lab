@@ -44,7 +44,25 @@ clean:
 	${RM} *.o *.so *.bak
 
 # DO NOT DELETE
-ADD_RI.o: ADD_RI.c /usr/include/stdc-predef.h
+ADD_RI.o: ADD_RI.c /usr/include/stdc-predef.h /usr/include/assert.h \
+ /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/bits/long-double.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ ../../include/instr/ADD_RI.h \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ ../../include/instr/../instr.h \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include/stdbool.h \
+ ../../include/instr/../reg.h ../../include/instr/../mem.h \
+ ../../include/machine.h ../../include/proc.h ../../include/reg.h \
+ ../../include/mem.h
 ADDS_RR.o: ADDS_RR.c /usr/include/stdc-predef.h
 ANDS_RR.o: ANDS_RR.c /usr/include/stdc-predef.h
 ASR.o: ASR.c /usr/include/stdc-predef.h

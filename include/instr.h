@@ -17,6 +17,7 @@
 #include "reg.h"
 #include "mem.h"
 
+#define EXTRACT(src, mask, shift) (((src) & (mask)) >> (shift))
 #define GETBF(src, frompos, width) safe_GETBF(((int32_t) (src)), (frompos), (width))
 
 /* Used to set condition flags for flag setting instructions
