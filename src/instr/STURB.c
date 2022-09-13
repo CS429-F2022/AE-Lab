@@ -15,7 +15,7 @@ void decode_STURB(instr_t * const insn) {
     int64_t offset = imm9; // Check
     int n = GETBF(instr, 0, 5);
     int t = GETBF(instr, 5, 5);
-    insn->op = OP_LDURB;
+    insn->op = OP_STURB;
     insn->src1 = n == 31 ? &(guest.proc->SP) : guest.proc->GPR.names64 + n;
     insn->imm = offset;
     insn->opnd1.xval = insn->src1->bits->xval;

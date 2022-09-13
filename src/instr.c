@@ -39,10 +39,10 @@ static inline void init_itable_range(opcode_t op, unsigned idx1, unsigned idx2) 
 
 void init_itable(void) {
     for (int i = 0; i < (2<<11); i++) itable[i] = OP_ERROR;
-    init_itable_entry(OP_LDURB, 0x1b2U);
-    init_itable_entry(OP_LDUR, 0x7b2U);
+    init_itable_entry(OP_LDURB, 0x1c2U);
+    init_itable_entry(OP_LDUR, 0x7c2U);
     init_itable_entry(OP_STURB, 0x1c0U);
-    init_itable_entry(OP_STUR, 0x7b0U);
+    init_itable_entry(OP_STUR, 0x7c0U);
     init_itable_range(OP_MOVK, 0x794U, 0x797U);
     init_itable_range(OP_MOVZ, 0x694U, 0x697U);
     init_itable_range(OP_ADD_RI, 0x088U, 0x08bU);
@@ -282,7 +282,7 @@ static char *opcode_names[] = {
     "ANDS ",
     "LSL ",
     "LSR ",
-    "UBFM "
+    "UBFM ",
     "ASR ",
     "B ",
     "B.cond ",
